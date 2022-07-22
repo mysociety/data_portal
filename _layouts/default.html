@@ -1,24 +1,24 @@
-
 <!doctype html>
 <html lang="en" class="no-js">
 
-{% include mysoc_head.html %}
+{% include base/mysoc_head.html %}
 
 <body>
 
-{% include mysoc_header.html %}
+    {% include base/mysoc_header.html %}
 
-    <div class="page-wrapper" >
+    <div class="page-wrapper">
         <div class="page">
             <div class="main-content-column-full-width" style="padding-top:10px">
                 <main role="main" class="main-content">
-					{{content}}
+                    {{content}}
                 </main>
             </div>
         </div>
     </div>
 
-{% include mysoc_footer.html %}
-	
+    {% include base/mysoc_footer.html %}
+
 </body>
+
 </html>

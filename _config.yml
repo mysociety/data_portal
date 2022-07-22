@@ -1,16 +1,11 @@
-title: mySociety Data
-greeting: mySociety Data
+title: Datasets and APIs
+greeting: Datasets and APIs
 description: mySociety's datasets and data services
 baseurl: ''
 logo: /img/orgs/ms.png
 
 # Site theme
-jkan_theme: default
 repository: mysociety/data_portal
-
-# Authentication
-github_client_id: 6adbccde067603821507
-gatekeeper_host: https://mysociety-jkan-gatekeeper.herokuapp.com
 
 # Dataset schema
 schema: default
@@ -19,7 +14,9 @@ schema: default
 navigation:
   - title: Datasets
     url: /datasets/
-    
+  - title: APIs
+    url: /categories/apis/
+
 # Collections
 collections:
   datasets:
