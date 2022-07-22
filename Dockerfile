@@ -1,1 +1,1 @@
-FROM ghcr.io/mysociety/jkan:main
+FROM ghcr.io/mysociety/jekyll_image:main

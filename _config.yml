@@ -6,7 +6,7 @@ logo: /img/orgs/ms.png
 
 # Site theme
 jkan_theme: default
-repository: mysociety/jkan
+repository: mysociety/data_portal
 
 # Authentication
 github_client_id: 6adbccde067603821507
