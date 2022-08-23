@@ -4,6 +4,11 @@ A lightweight, backend-free open data portal, powered by Jekyll
 
 View at data.mysociety.org
 
+
+## Updating from datapackages repos
+
+* Add the new page to the `datapackages.yaml` file. The github action should sync relevant content from that. 
+
 ## Local Development
 
 There is a docker config that will work locally or on codespaces. 
@@ -21,6 +26,7 @@ Local adaptions to mySociety theme are in sass folder - both that and 'theme/sas
 Key template is templates/default.html - this then brings in various mysoc_ includes. 
 
 Don't forget to `git submodule update --init --recursive` to pull down the mySociety styles
+
 
 ## Categories
 
