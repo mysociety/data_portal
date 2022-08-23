@@ -21,7 +21,6 @@ category:
   - APIs
   - Geodata
   - United Kingdom
-  - GE2017
 maintainer: mySociety
 maintainer_email: mapit@mysociety.org
 last_modified: ''

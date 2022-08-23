@@ -54,7 +54,6 @@ category:
   - People
   - APIs
   - United Kingdom
-  - GE2017
   - TheyWorkForYou
 maintainer: mySociety
 maintainer_email: ''

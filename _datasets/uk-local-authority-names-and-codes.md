@@ -15,7 +15,6 @@ license: ''
 category:
   - Groups & Bodies
   - United Kingdom
-  - 'GE2017'
 maintainer: Alex Parsons
 maintainer_email: alex.parsons@mysociety.org
 last_modified: ''
