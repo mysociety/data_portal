@@ -9,6 +9,6 @@ resources:
   url: https://mysociety.github.io/uk_local_authority_names_and_codes/datasets/uk_la_future/latest
   format: info
 category:
-- UK
 - UK Local data
+- United Kingdom
 ---
