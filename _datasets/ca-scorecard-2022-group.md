@@ -1,6 +1,6 @@
 ---
 schema: default
-title: Dataset: Scorecard data (by council group)
+title: Scorecard data (by council group)
 notes: "Scorecards score information with seperate tables for each council type/group"
 more_info: https://mysociety.github.io/climate_scorecard_data_2022/datasets/scorecards-by-council-group/
 resources:
