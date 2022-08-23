@@ -54,11 +54,99 @@
     <div data-hook="datasets-items">
       
       {% for dataset in datasets %}
-       <dataset>
+       <dataset name="{{ dataset.url }}">
          <h3><a href="{{ dataset.url }}">{{ dataset.title }}</a></h3>
          {{ dataset.notes }}
        </dataset>
       {% endfor %}
     </div>
+
+  <div class="grid search-box-grid">
+  <div class = "col-half">
+  {% include search-box.html %}
+  </div>
+  </div>
   </div>
 </div>
+
+
+<script src="https://unpkg.com/lunr/lunr.js"></script>
+
+<script>
+
+  var documents = [
+  {% for dataset in datasets %}
+      {
+        "url": "{{ dataset.url }}",
+        "title": {{ dataset.title  | jsonify }},
+        "desc": {{ dataset.notes | jsonify }},
+        "category": "{% for category in dataset.category %}{{ category }} {% endfor %}" 
+      }{% if forloop.last == false %},{% endif %}
+  {% endfor %}
+]
+
+
+  const queryString = window.location.search;
+  const urlParams = new URLSearchParams(queryString);
+  const page_type = urlParams.get('q')
+
+  // if page_type is set, hide all dataset elements (just using javascript)
+  if (page_type) {
+    document.querySelectorAll('dataset').forEach(function(dataset) {
+      dataset.style.display = 'none'
+    })
+
+    document.querySelector(".search-box-grid").style.display = 'none'
+
+      // empty the dataset count element
+    document.querySelector('[data-hook="datasets-count"]').innerHTML = ''
+  }
+
+
+  window.onload = function(){
+
+    // if page_type is not set, exit
+    if (!page_type) {
+      return
+    }
+  
+    // lunr index - in principle could pre-do this but it's not big.
+    var idx = lunr(function () {
+    this.ref('url')
+    this.field('title')
+    this.field('desc')
+    this.field('category')
+
+    documents.forEach(function (doc) {
+      this.add(doc)
+    }, this)
+  })
+
+    items = idx.search(page_type)
+    // javascript to extract the ref element from the lunr search result and add it to a new array called search_ids
+    var search_ids = items.map(function(item){
+      return item.ref
+    })
+
+    // get the dataset count element with class "datasets-count"
+    var datasetCount = document.getElementsByClassName("datasets-count")[0];
+    // set the dataset count element to '1 dataset', '2 datasets', '3 datasets' etc - based on the length of the search_ids array.
+    // if there is only one item in search_ids, say dataset rather table than datasets.
+    datasetCount.innerHTML = search_ids.length + " " + (search_ids.length === 1 ? "dataset" : "datasets");
+
+
+    // show all dataset tag with a name referenced in the search_ids array
+    document.querySelectorAll('dataset').forEach(function(dataset) {
+      if (search_ids.includes(dataset.getAttribute('name'))) {
+        dataset.style.display = 'block'
+      }
+    })
+
+    document.querySelector(".search-box-grid").style.display = 'block'
+
+    }
+  
+
+
+</script>
+

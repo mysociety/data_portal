@@ -43,7 +43,6 @@ resources:
 last_modified: 2019-05-13T08:08:48
 license: ''
 category:
-  - Albania
   - People
   - Groups & Bodies
 maintainer: EveryPolitician

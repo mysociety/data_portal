@@ -61,15 +61,6 @@ google_analytics:
   enabled: true
   code: "UA-660910-42"
 
-# US Digital Analytics Program - https://analytics.usa.gov
-digital_analytics_program:
-  enabled: false
-  agency: ""
-  subagency: ""
-
-# Hypothesis.io - Annotator
-hypothesis:
-  enabled: false
 
 # Twitter
 twittercard:

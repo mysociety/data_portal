@@ -1,26 +1,43 @@
 ---
-title: mySociety Data Portal
+title: mySociety datasets and APIs
 layout: default
 ---
 
-<h1 class="homepage-title">{{ site.description }}</h1>
+<h1 class="homepage-title">Find mySociety datasets and data services</h1>
 <div class="homepage-description">
-  <p>mySociety services produce a lot of useful (and interesting!) data. Over the years we’ve often made components or the results of mySociety services available through <a href="/datasets/?category=apis">APIs</a> or as open data to download.</p>
-  <p>If you end up doing something interesting with the data, please <ahref = "mailto:hello@mysociety.org">let us know!</a></p>
+  <p>
+    mySociety services and research rely on and produce open datasets.
+    Over the years we’ve often made components or the results of mySociety services available through <a href="/datasets/?category=apis">APIs</a> or as open data to download.
+    This site brings all our data together.</p>
+  <p>If you end up doing something interesting with the data, please <a href="mailto:hello@mysociety.org">let us know!</a></p>
 
 </div>
-<div class="homepage-categories">
+
+<div class="grid">
+<a name="search"></a>
+		<div class = "col-half">
+    {% include search-box.html %}
+		<div class = "col-half">
+
+<h2> Explore by category </h2>
   
 {% assign featured_categories = site.data.categories | where: 'featured', 'true' %}
+<ul>
 {% for category in featured_categories %}
+    <li>
     {% capture logo_alt %}{{ category.name }}{% if category.logo_credit and category.logo_credit != empty %} logo by {{ category.logo_credit }}{% endif %}{% endcapture %}
-    <a href="{{ site.baseurl }}/categories/{{ category.name | slugify }}/" class="thumbnail category-card" title="{{ logo_alt }}">
-      <div class="category-card__content">
-      {% if category.logo and category.logo != empty %}
-        <img src="{{ site.baseurl }}{{ category.logo }}" alt="{{ logo_alt }}" class="category-card__image" height="128" width="128">
-      {% endif %}
-      <h2 class="category-card__title">{{ category.name }}</h2>
-      </div>
+    <a href="{{ site.baseurl }}/categories/{{ category.name | slugify }}/"  title="{{ logo_alt }}"> {{ category.name }}
     </a>
+   </li>
 {% endfor %}
+</ul>
+
+Or view <a href="/datasets/">a list of all datasets</a>.
+
+</div>
+</div>	
+
+
+
+
 </div>
