@@ -7,6 +7,9 @@ resources:
 - name: Composite Rural/Urban Classification
   url: https://mysociety.github.io/uk_ruc/datasets/uk_ruc/latest
   format: info
+- name: Local Authority RUC Profile
+  url: https://mysociety.github.io/uk_ruc/datasets/uk_ruc/latest
+  format: info
 category:
 - Geodata
 - LSOA

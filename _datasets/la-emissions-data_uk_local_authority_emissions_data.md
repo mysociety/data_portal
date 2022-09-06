@@ -7,6 +7,9 @@ resources:
 - name: UK Local Authority Emissions
   url: https://mysociety.github.io/la-emissions-data/datasets/uk_local_authority_emissions_data/latest
   format: info
+- name: Local authority emissions labels
+  url: https://mysociety.github.io/la-emissions-data/datasets/uk_local_authority_emissions_data/latest
+  format: info
 category:
 - Climate
 - UK
