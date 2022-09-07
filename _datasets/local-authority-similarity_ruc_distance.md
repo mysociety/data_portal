@@ -1,8 +1,11 @@
 ---
 schema: default
 title: Local authority RUC distance
-notes: "Rankings, match-scores and labels for local authorities based on compoiste\
-  \ rural urban classifcation data emissions data\n"
+notes: "The similarity between authorities is calculated by the proportion of the\
+  \ population living in urban, rural, and highly rural neighbourhoods. The population\
+  \ density is also used to help distinguish between authorities in entirely urban\
+  \ areas. \nThis UK-wide comparison is based on a [Composite Rural Urban Classification](https://mysociety.github.io/uk_ruc/)\
+  \ system. \n"
 more_info: https://mysociety.github.io/local-authority-similarity/datasets/ruc_distance/latest
 resources:
 - name: Local Authority RUC Similarity
@@ -15,5 +18,5 @@ resources:
   url: https://mysociety.github.io/local-authority-similarity/datasets/ruc_distance/latest
   format: info
 category:
-  - UK Local Authority data
+- UK Local Authority data
 ---

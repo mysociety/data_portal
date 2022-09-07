@@ -1,8 +1,8 @@
 ---
 schema: default
 title: Local authority physical distance
-notes: "Rankings, match-scores and labels for local authorities based on physical\
-  \ data\n"
+notes: This comparison set shows councils which are geographically close to the selected
+  council.
 more_info: https://mysociety.github.io/local-authority-similarity/datasets/physical_distance/latest
 resources:
 - name: Local Authority Location Similarity
@@ -15,5 +15,5 @@ resources:
   url: https://mysociety.github.io/local-authority-similarity/datasets/physical_distance/latest
   format: info
 category:
-  - UK Local Authority data
+- UK Local Authority data
 ---

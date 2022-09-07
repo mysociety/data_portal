@@ -15,6 +15,6 @@ resources:
   url: https://mysociety.github.io/composite_uk_imd/datasets/gb_index/latest
   format: info
 category:
-  - Small Area (LSOA) data
-  - UK Local Authority data
+- Small Area (LSOA) data
+- UK Local Authority data
 ---
