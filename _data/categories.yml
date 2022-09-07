@@ -21,7 +21,7 @@
 - name: UK Local Authority data
   featured: true
 - name: Small Area (LSOA) data
-- featured: true
+  featured: true
 - name: WhatDoTheyKnow
   logo: ''
   logo_credit: ''
