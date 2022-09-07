@@ -17,7 +17,11 @@
 - name: United Kingdom
   logo: /img/categories/uk.svg
   logo_credit: 
+  featured: false
+- name: UK Local Authority data
   featured: true
+- name: Small Area (LSOA) data
+- featured: true
 - name: WhatDoTheyKnow
   logo: ''
   logo_credit: ''
