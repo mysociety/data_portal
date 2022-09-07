@@ -12,6 +12,7 @@ resources:
   format: info
 category:
 - Geodata
-- LSOA
+- Small Area (LSOA) data
+- UK Local Authority data
 - United Kingdom
 ---

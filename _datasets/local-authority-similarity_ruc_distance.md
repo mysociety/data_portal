@@ -14,5 +14,6 @@ resources:
 - name: Local authority rural-urban labels
   url: https://mysociety.github.io/local-authority-similarity/datasets/ruc_distance/latest
   format: info
-category: []
+category:
+  - UK Local Authority data
 ---

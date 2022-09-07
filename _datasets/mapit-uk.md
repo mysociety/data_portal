@@ -21,6 +21,8 @@ category:
   - APIs
   - Geodata
   - United Kingdom
+  - Small Area (LSOA) data
+  - UK Local Authority data
 maintainer: mySociety
 maintainer_email: mapit@mysociety.org
 last_modified: ''

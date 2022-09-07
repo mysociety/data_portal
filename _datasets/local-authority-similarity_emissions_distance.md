@@ -14,5 +14,6 @@ resources:
 - name: Local authority emissions labels
   url: https://mysociety.github.io/local-authority-similarity/datasets/emissions_distance/latest
   format: info
-category: []
+category:
+  - UK Local Authority data
 ---

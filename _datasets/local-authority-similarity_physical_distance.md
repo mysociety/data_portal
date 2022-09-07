@@ -14,5 +14,6 @@ resources:
 - name: Local authority location labels
   url: https://mysociety.github.io/local-authority-similarity/datasets/physical_distance/latest
   format: info
-category: []
+category:
+  - UK Local Authority data
 ---

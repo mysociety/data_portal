@@ -13,5 +13,5 @@ resources:
 category:
 - Climate
 - UK
-- UK Local data
+- UK Local Authority data
 ---
