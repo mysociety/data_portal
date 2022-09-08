@@ -9,26 +9,35 @@ layout: default
     mySociety services and research rely on and produce open datasets. We often made components or the results of mySociety services available through <a href="/datasets/?category=apis">APIs</a> or as open data to download.
     This site brings all our data together.</p>
   <p>If you end up doing something interesting with the data, please <a href="mailto:hello@mysociety.org">let us know!</a></p>
+
+<p>
+Main categories: 
+{% assign featured_categories = site.data.categories | where: 'featured', 'true' %}
+
+{% for category in featured_categories %}
+    {% capture logo_alt %}{{ category.name }}{% if category.logo_credit and category.logo_credit != empty %} logo by {{ category.logo_credit }}{% endif %}{% endcapture %}
+    <a href="{{ site.baseurl }}/categories/{{ category.name | slugify }}/"  title="{{ logo_alt }}">{{ category.name }}</a>{% unless forloop.last %}, {% endunless %} 
+
+{% endfor %}
+</p>
 </div>
+
+
 
 <div class="grid">
 <a name="search"></a>
 		<div class = "col-half">
-    {% include search-box.html %}
+    {% include email-box.html message="Search our datasets" style="max-width: 17.5em" %}
+    <br>
+
+    
+
+    </div>
+    
 		<div class = "col-half">
 
-<h2> Explore by category </h2>
-  
-{% assign featured_categories = site.data.categories | where: 'featured', 'true' %}
-<ul>
-{% for category in featured_categories %}
-    <li>
-    {% capture logo_alt %}{{ category.name }}{% if category.logo_credit and category.logo_credit != empty %} logo by {{ category.logo_credit }}{% endif %}{% endcapture %}
-    <a href="{{ site.baseurl }}/categories/{{ category.name | slugify }}/"  title="{{ logo_alt }}"> {{ category.name }}
-    </a>
-   </li>
-{% endfor %}
-</ul>
+    {% include search-box.html %}
+
 
 Or view <a href="/datasets/">a list of all datasets</a>.
 
