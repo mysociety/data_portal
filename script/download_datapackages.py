@@ -39,14 +39,14 @@ def get_datapackages() -> dict[str, list[str]]:
     Opens up the `datapacakges.yaml` file one level up.
     This is a dict of domains to a list of subfolder with a datapackage site.
     """
-    with open("datapackages.yaml", "r") as stream:
+    with open(Path("_data","datapackages.yaml"), "r") as stream:
         data = stream.read()
     return yaml.load(data)
 
 
 def process_all_datapackages():
     data = get_datapackages()
-    for domain, list_of_folders in data.items():
+    for domain, list_of_folders in data["domains"].items():
         for datapackage in list_of_folders:
             process_datapackage_repo(domain, datapackage)
 

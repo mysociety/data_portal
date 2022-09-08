@@ -8,7 +8,7 @@ View at https://data.mysociety.org
 
 ## Updating from datapackages repos
 
-* Packages can be automatically imported from the new data publishing approach. Add the new page to the `datapackages.yaml` file. The github action should sync relevant content from that. The categories are taken from the 'keywords' in the original datapackage.yaml - so either add those to the source, or add manually afterward. 
+* Packages can be automatically imported from the new data publishing approach. Add the new page to the `_data/datapackages.yaml` file. The github action should sync relevant content from that. The categories are taken from the 'keywords' in the original datapackage.yaml - so either add those to the source, or add manually afterward. 
 
 ## Add data manually
 
