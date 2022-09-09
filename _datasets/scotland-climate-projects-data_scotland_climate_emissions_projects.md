@@ -8,7 +8,7 @@ resources:
   url: https://mysociety.github.io/scotland-climate-projects-data/datasets/scotland_climate_emissions_projects/latest
   format: info
 category:
-  - UK Local Authority data
-  - United Kingdom
-  - Climate
+- Climate
+- UK Local Authority data
+- United Kingdom
 ---

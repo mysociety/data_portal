@@ -9,7 +9,7 @@ resources:
   url: https://mysociety.github.io/la-plans-promises/datasets/local_authority_climate_emergency_declarations/latest
   format: info
 category:
-  - UK Local Authority data
-  - United Kingdom
-  - Climate
+- Climate
+- UK Local Authority data
+- United Kingdom
 ---
