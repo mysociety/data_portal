@@ -22,6 +22,8 @@
   featured: true
 - name: Small Area (LSOA) data
   featured: true
+- name: Climate
+  featured: true
 - name: WhatDoTheyKnow
   logo: ''
   logo_credit: ''
