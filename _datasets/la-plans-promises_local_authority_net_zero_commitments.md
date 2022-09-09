@@ -9,7 +9,7 @@ resources:
   url: https://mysociety.github.io/la-plans-promises/datasets/local_authority_net_zero_commitments/latest
   format: info
 category:
-  - UK Local Authority data
-  - United Kingdom
-  - Climate
+- Climate
+- UK Local Authority data
+- United Kingdom
 ---

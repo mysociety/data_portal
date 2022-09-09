@@ -8,7 +8,7 @@ resources:
   url: https://mysociety.github.io/la-plans-promises/datasets/local_authority_climate_plans_metadata/latest
   format: info
 category:
-  - UK Local Authority data
-  - United Kingdom
-  - Climate
+- Climate
+- UK Local Authority data
+- United Kingdom
 ---
