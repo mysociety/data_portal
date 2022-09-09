@@ -1,6 +1,7 @@
 ---
 ---
-{"datarepos": [
+{   "default_domain": "https://mysociety.github.io",
+    "datarepos": [
 {% for domain in site.data.datapackages.domains %}
 {% for folder in domain[1] %}
 "https://{{ domain[0] }}/{{ folder }}"{% unless forloop.last %},{% endunless %}
