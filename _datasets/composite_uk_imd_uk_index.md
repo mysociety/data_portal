@@ -7,6 +7,9 @@ resources:
 - name: Local Authority deprivation
   url: https://mysociety.github.io/composite_uk_imd/datasets/uk_index/latest
   format: info
+- name: Westminster Constituency deprivation
+  url: https://mysociety.github.io/composite_uk_imd/datasets/uk_index/latest
+  format: info
 - name: UK_IMD_E
   url: https://mysociety.github.io/composite_uk_imd/datasets/uk_index/latest
   format: info
