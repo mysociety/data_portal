@@ -22,6 +22,13 @@ Within this `script/server` will run the local debug server.
 
 This will then start the rendering process and serve on http://127.0.0.1:4000
 
+### Docker Step-by-step
+
+1. docker-compose run app /bin/bash
+2. container> Get the IP address of the container via ```ip a```
+3. container> ./scripts/server (wait for it to Server Running at 0.0.0.0:4000)
+4. browser> Go to http://172.20.0.2:4000/ where 172.20.0.2 is replaced by the IP from step 2.
+
 ## Theme
 
 Jkan runs on Jekyll.
