@@ -22,6 +22,9 @@ resources:
 - name: UM_IMD_W
   url: https://mysociety.github.io/composite_uk_imd/datasets/uk_index/latest
   format: info
+- name: Constituencies (2025) by IMD
+  url: https://mysociety.github.io/composite_uk_imd/datasets/uk_index/latest
+  format: info
 category:
 - Small Area (LSOA) data
 - UK Local Authority data
