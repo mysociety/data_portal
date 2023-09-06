@@ -10,5 +10,8 @@ resources:
   url: 
     https://mysociety.github.io/2025-constituencies/datasets/uk_parliament_2025_postcode_lookup/latest
   format: info
-category: []
+category:
+- UK
+- UK Local Authority data
+- United Kingdom
 ---

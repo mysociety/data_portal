@@ -12,5 +12,8 @@ resources:
   url: 
     https://mysociety.github.io/2025-constituencies/datasets/parliament_con_2025/latest
   format: info
-category: []
+category:
+- UK
+- UK Local Authority data
+- United Kingdom
 ---
