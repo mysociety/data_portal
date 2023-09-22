@@ -13,7 +13,7 @@ license: ''
 category:
   - APIs
   - United Kingdom
-  - TheyWorkForYou
+  - WhatDoTheyKnow
   - FOI
 maintainer: mySociety
 maintainer_email: ''
