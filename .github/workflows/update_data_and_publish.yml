@@ -57,7 +57,7 @@ jobs:
         uses: mysociety/datasette-lite-builder@main
         id: build-datasette
         with:
-          theme: 'mysociety'
+          theme: 'mysoc'
           publish_dir: './_site/datasette'
 
       - name: Upload artifact
