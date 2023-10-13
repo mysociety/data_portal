@@ -47,6 +47,11 @@ jobs:
       - name: Setup Pages
         uses: actions/configure-pages@v1
 
+      - name: Create dir
+        shell: bash
+        run: |
+          mkdir -p ./_site/datasette
+
       - name: Build Datasette explorer 
         uses: mysociety/datasette-lite-builder@main
         id: build-datasette
