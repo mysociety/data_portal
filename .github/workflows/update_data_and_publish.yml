@@ -47,9 +47,17 @@ jobs:
       - name: Setup Pages
         uses: actions/configure-pages@v1
 
-      - name: Create dir
+
+      - name: Build with Jekyll
+        uses: actions/jekyll-build-pages@v1
+        with:
+          source: ./
+          destination: ./_site
+
+      - name: Create datasette dir
         shell: bash
         run: |
+          chmod a+w ./_site
           mkdir -p ./_site/datasette
 
       - name: Build Datasette explorer 
@@ -58,13 +66,6 @@ jobs:
         with:
           theme: 'mysoc'
           publish_dir: './_site/datasette'
-
-
-      - name: Build with Jekyll
-        uses: actions/jekyll-build-pages@v1
-        with:
-          source: ./
-          destination: ./_site
 
 
       - name: Upload artifact
