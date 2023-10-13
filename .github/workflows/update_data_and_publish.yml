@@ -47,18 +47,20 @@ jobs:
       - name: Setup Pages
         uses: actions/configure-pages@v1
 
-      - name: Build with Jekyll
-        uses: actions/jekyll-build-pages@v1
-        with:
-          source: ./
-          destination: ./_site
-
       - name: Build Datasette explorer 
         uses: mysociety/datasette-lite-builder@main
         id: build-datasette
         with:
           theme: 'mysoc'
           publish_dir: './_site/datasette'
+
+
+      - name: Build with Jekyll
+        uses: actions/jekyll-build-pages@v1
+        with:
+          source: ./
+          destination: ./_site
+
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v1
