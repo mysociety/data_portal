@@ -52,6 +52,14 @@ jobs:
         with:
           source: ./
           destination: ./_site
+
+      - name: Build Datasette explorer 
+        uses: mysociety/datasette-lite-builder@main
+        id: build-datasette
+        with:
+          theme: 'mysociety'
+          publish_dir: './_site/datasette'
+
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v1
 
