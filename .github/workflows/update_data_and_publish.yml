@@ -57,7 +57,7 @@ jobs:
       - name: Create datasette dir
         shell: bash
         run: |
-          chmod a+w ./_site
+          sudo chmod a+w ./_site
           mkdir -p ./_site/datasette
 
       - name: Build Datasette explorer 
