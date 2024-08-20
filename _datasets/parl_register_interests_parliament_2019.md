@@ -1,8 +1,7 @@
 ---
 schema: default
-title: Releases for the 2019 Parliament
-notes: Register of members interests, with basic NLP processing. Current Parliament
-  (2019-) only.
+title: Register of Interests (2019-2024)
+notes: Register of members interests, with basic NLP processing. 2019 Parliament.
 more_info: 
   https://mysociety.github.io/parl_register_interests/datasets/parliament_2019/latest
 resources:
