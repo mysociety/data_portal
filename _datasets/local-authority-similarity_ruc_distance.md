@@ -7,19 +7,19 @@ notes: "The similarity between authorities is calculated by the proportion of th
   \nThis UK-wide comparison is based on a [Composite Rural Urban Classification](https://mysociety.github.io/uk_ruc/)
   system. \n"
 more_info: 
-  https://mysociety.github.io/local-authority-similarity/datasets/ruc_distance/latest
+  https://pages.mysociety.org/local-authority-similarity/datasets/ruc_distance/latest
 resources:
 - name: Local Authority RUC Similarity
   url: 
-    https://mysociety.github.io/local-authority-similarity/datasets/ruc_distance/latest
+    https://pages.mysociety.org/local-authority-similarity/datasets/ruc_distance/latest
   format: info
 - name: Local authority rural-urban profile labels
   url: 
-    https://mysociety.github.io/local-authority-similarity/datasets/ruc_distance/latest
+    https://pages.mysociety.org/local-authority-similarity/datasets/ruc_distance/latest
   format: info
 - name: Local authority rural-urban labels
   url: 
-    https://mysociety.github.io/local-authority-similarity/datasets/ruc_distance/latest
+    https://pages.mysociety.org/local-authority-similarity/datasets/ruc_distance/latest
   format: info
 category:
 - UK Local Authority data

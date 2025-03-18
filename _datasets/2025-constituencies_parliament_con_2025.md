@@ -9,11 +9,11 @@ notes: "Lookup table and geodata for the constituencies that will exist after Ju
   file names results from the previous uncertainty about the election - where 2025
   was the last time it might have been called.\n"
 more_info: 
-  https://mysociety.github.io/2025-constituencies/datasets/parliament_con_2025/latest
+  https://pages.mysociety.org/2025-constituencies/datasets/parliament_con_2025/latest
 resources:
 - name: UK Parliamentary Constituencies 2025
   url: 
-    https://mysociety.github.io/2025-constituencies/datasets/parliament_con_2025/latest
+    https://pages.mysociety.org/2025-constituencies/datasets/parliament_con_2025/latest
   format: info
 category:
 - UK

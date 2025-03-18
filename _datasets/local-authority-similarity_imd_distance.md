@@ -11,19 +11,19 @@ notes: "The similarity between authorities is calculated by the proportion of th
   score. \nThis UK-wide comparison is based on a [Composite Index of Multiple Deprivation](https://mysociety.github.io/composite_uk_imd)
   system. \n"
 more_info: 
-  https://mysociety.github.io/local-authority-similarity/datasets/imd_distance/latest
+  https://pages.mysociety.org/local-authority-similarity/datasets/imd_distance/latest
 resources:
 - name: Local Authority IMD Similarity
   url: 
-    https://mysociety.github.io/local-authority-similarity/datasets/imd_distance/latest
+    https://pages.mysociety.org/local-authority-similarity/datasets/imd_distance/latest
   format: info
 - name: Local authority IMD profile labels
   url: 
-    https://mysociety.github.io/local-authority-similarity/datasets/imd_distance/latest
+    https://pages.mysociety.org/local-authority-similarity/datasets/imd_distance/latest
   format: info
 - name: Local authority IMD labels
   url: 
-    https://mysociety.github.io/local-authority-similarity/datasets/imd_distance/latest
+    https://pages.mysociety.org/local-authority-similarity/datasets/imd_distance/latest
   format: info
 category:
 - UK Local Authority data

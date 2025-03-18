@@ -6,11 +6,11 @@ notes: "Dataset of known citizen assemblies in the UK and their reports.\nSee th
   on adding new data.\nThis dataset itself is licenced as CC-BY-4.0 - cached versions
   of reports may be licenced in different ways.\n"
 more_info: 
-  https://mysociety.github.io/citizen-assembly-data/datasets/citizens_assembly_register/latest
+  https://pages.mysociety.org/citizen-assembly-data/datasets/citizens_assembly_register/latest
 resources:
 - name: Citizens Assembly Register
   url: 
-    https://mysociety.github.io/citizen-assembly-data/datasets/citizens_assembly_register/latest
+    https://pages.mysociety.org/citizen-assembly-data/datasets/citizens_assembly_register/latest
   format: info
 category:
 - Citizens Assembly
