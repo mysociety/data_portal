@@ -31,7 +31,7 @@ jobs:
       - name: Get data from datapackages
         shell: bash
         run: |
-          pip install ruamel.yaml bs4
+          pip install ruamel.yaml bs4 duckdb
           python script/download_datapackages.py
 
       - name: run category updater
